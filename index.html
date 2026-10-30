@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101319"><meta name="description" content="Auto Mecânica Freitas">
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+<title>Auto Mecânica Freitas</title>
+</head>
+<body>
+<header><div class="brand">⚙ AUTO MECÂNICA <b>FREITAS</b></div><p>Seu veículo em boas mãos</p></header>
+<main>
+<h1>Olá! 👋</h1><p class="intro">Bem-vindo à Auto Mecânica Freitas.</p>
+<section class="grid">
+<button>⌕<strong>Informações técnicas</strong><small>Dados, componentes e manuais</small></button>
+<button>🔧<strong>Diagnóstico e soluções</strong><small>Sintomas, causas e reparos</small></button>
+<button>🌀<strong>Turbo e injeção</strong><small>Funcionamento e manutenção</small></button>
+<button>🚗<strong>Modelos e especificações</strong><small>Torque, pressão e capacidades</small></button>
+<button>📘<strong>Manuais e procedimentos</strong><small>Passo a passo de serviços</small></button>
+<button>🤖<strong>Mecânico virtual</strong><small>Converse com o assistente</small></button>
+</section>
+<section class="scanner"><strong>Scanner Napro P6 CAN 3000</strong><p>Área reservada para futura integração com o equipamento.</p><small>A comunicação real depende do protocolo e de uma conexão compatível; ainda não está implementada.</small></section>
+</main>
+<button id="turbo" aria-label="Abrir mecânico virtual">🌀</button>
+<div id="chat" class="chat hidden">
+<div class="chathead"><strong>Mecânico virtual</strong><button id="close">✕</button></div>
+<p id="status">Toque no microfone para falar ou digite sua dúvida.</p>
+<div class="controls"><button id="mic">🎙 Falar</button><input id="msg" placeholder="Digite sua dúvida"><button id="send">Enviar</button></div>
+<div id="answer" aria-live="polite"></div>
+</div>
+<script src="app.js"></script>
+</body></html>
